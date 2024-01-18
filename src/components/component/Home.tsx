@@ -21,7 +21,7 @@ interface SvgProps {
 export default function Component() {
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="px-4 lg:px-6 h-14 flex items-center">
+      <header className="sticky top-0 px-4 lg:px-6 h-14 flex items-center">
         <Link className="flex items-center justify-center" href="#">
           <MountainIcon className="h-6 w-6" />
           <span className="sr-only">Tu Negocio</span>
@@ -29,19 +29,19 @@ export default function Component() {
         <nav className="ml-auto flex gap-4 sm:gap-6">
           <Link
             className="text-sm font-medium hover:underline underline-offset-4"
-            href="#"
+            href="#servicios"
           >
             Servicios
           </Link>
           <Link
             className="text-sm font-medium hover:underline underline-offset-4"
-            href="#"
+            href="#testimonios"
           >
             Testimonios
           </Link>
           <Link
             className="text-sm font-medium hover:underline underline-offset-4"
-            href="#"
+            href="#contacto"
           >
             Contacto
           </Link>
@@ -78,7 +78,8 @@ export default function Component() {
             </div>
           </div>
         </section>
-        <section className="w-full py-12 md:py-24 lg:py-32">
+
+        <section className="w-full py-12 md:py-24 lg:py-32" id="servicios">
           <div className="container space-y-12 px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
@@ -119,7 +120,8 @@ export default function Component() {
             </div>
           </div>
         </section>
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
+
+        <section className="w-full py-12 md:py-24 lg:py-20 bg-gray-100 dark:bg-gray-800" id="testimonios">
           <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
             <div className="space-y-3">
               <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">
@@ -130,7 +132,7 @@ export default function Component() {
                 clientes tienen que decir.
               </p>
             </div>
-            <div className="mx-auto w-full max-w-sm space-y-2">
+            <div className="mx-auto w-full max-w-4xl grid grid-cols-2 gap-4">
               <Card>
                 <CardHeader>
                   <Avatar>
@@ -170,7 +172,8 @@ export default function Component() {
             </div>
           </div>
         </section>
-        <section className="w-full py-12 md:py-24 lg:py-32">
+
+        <section className="w-full py-12 md:py-24 lg:py-32" id="contacto">
           <div className="container grid items-center gap-4 px-4 md:px-6">
             <div className="space-y-3">
               <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">
